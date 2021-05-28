@@ -13,6 +13,7 @@
 #' @return train: The tibble for training the model.
 #' @return test: The tibble for testing the model.
 #' @return holdout: The tibble of unseen data to predict values for.
+#' @importFrom magrittr %>%
 #' @export
 #'
 #' @examples
@@ -49,5 +50,5 @@ ingest_split <- function(
   # Train/Test split
   splits <- rsample::initial_split(df_train, prop = prop, strata = target)
 
-  return(list(rsample::training(splits), rsample::testing(splits), df_holdout))
+  return(list("train_data" = rsample::training(splits), "test_data" = rsample::testing(splits), "holdout_data" = df_holdout))
 }

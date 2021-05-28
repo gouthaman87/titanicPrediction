@@ -1,16 +1,29 @@
 Package: titanicPrediction
-Title: What the Package Does (One Line, Title Case)
+Title: Prediction of survival
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Gouthaman",
+           family = "Tharmathasan",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "gouthaman.tharmathasan@sgbd.co.uk")
+Description: use machine learning to create a model that predicts which   
+      passengers survived the Titanic shipwreck.
+License: file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: 
+    dplyr (>= 1.0.5),
+    magrittr (>= 2.0.1),
+    readr (>= 1.4.0),
+    recipes (>= 0.1.16),
+    rlang (>= 0.4.11),
+    rsample (>= 0.1.0),
+    tidyselect (>= 1.1.1)
+Suggests: 
+    rmarkdown,
+    knitr,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
