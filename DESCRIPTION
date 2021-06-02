@@ -16,11 +16,13 @@ RoxygenNote: 7.1.1
 Imports: 
     dplyr (>= 1.0.5),
     magrittr (>= 2.0.1),
+    parsnip (>= 0.1.5),
     readr (>= 1.4.0),
     recipes (>= 0.1.16),
     rlang (>= 0.4.11),
     rsample (>= 0.1.0),
-    tidyselect (>= 1.1.1)
+    tidyselect (>= 1.1.1),
+    workflows (>= 0.2.2)
 Suggests: 
     rmarkdown,
     knitr,
